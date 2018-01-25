@@ -1,0 +1,122 @@
+html,
+body {
+  font-family: Roboto, "Noto Sans CJK SC";
+}
+a {
+  text-decoration: none;
+}
+.mdl-layout__drawer {
+  border: none;
+}
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+  background-color: #0f0f0f;
+}
+.mdl-mini-footer {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  margin: 20px -24px 0px -24px;
+  background-color: #0f0f0f;
+}
+main {
+  position: relative;
+}
+main .waterfall-list {
+  column-count: 3;
+}
+main .waterfall-list .card-content {
+  padding: 8px;
+  break-inside: avoid-column;
+}
+main .mdl-shadow--2dp .page-card {
+  padding: 16px;
+}
+main .page-card .card-header {
+  padding: 16px;
+}
+main .page-card .card-summary {
+  margin: 16px;
+}
+main .page-card .card-summary p {
+  margin-top: 16px;
+}
+main .page-content {
+  padding: 24px;
+  padding-bottom: 0px;
+}
+main .page-content article {
+  padding: 8px;
+  font-size: 16px;
+  line-height: 1;
+}
+main .page-content .article-content {
+  padding: 16px;
+}
+main .page-content .article-content p,
+main .page-content .article-content li,
+main .page-content .article-content ol,
+main .page-content .article-content ul {
+  font-size: 1em;
+}
+main .page-content .article-content h2 {
+  font-size: 2em;
+}
+main .page-content .article-content h3 {
+  font-size: 1.8em;
+}
+main .page-content .article-content h4 {
+  font-size: 1.5em;
+}
+main .page-content .article-content h5 {
+  font-size: 1.3em;
+}
+main .page-content .article-content h6 {
+  font-size: 1.1em;
+}
+main .page-content .article-content img {
+  width: 80%;
+}
+main .page-content .card-content p {
+  font-size: 1em;
+}
+main .page-content .card-content h2 {
+  font-size: 2em;
+}
+main .page-content .card-content h3 {
+  font-size: 1.8em;
+}
+main .page-content .card-content h4 {
+  font-size: 1.5em;
+}
+main .page-content .card-content h5 {
+  font-size: 1.3em;
+}
+main .page-content .card-content h6 {
+  font-size: 1.1em;
+}
+main .page-content .card-content img {
+  width: 80%;
+}
+main .tag-chip span {
+  height: 180px;
+}
+main .intro-board {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+  margin: 0 16px 16px 0;
+  min-height: 360px;
+}
+main .intro-board .intro-title {
+  height: 100%;
+  width: 40%;
+  text-align: center;
+}
+main .intro-board .intro-content {
+  width: 60%;
+  height: 100%;
+  text-align: center;
+}

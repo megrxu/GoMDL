@@ -1,0 +1,21 @@
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">©&nbsp{{ now.Format "2006" }}&nbsp{{ .Site.Params.AuthorName }}</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li>
+        {{.Site.Params.Footnote}}
+      </li>
+      <li>
+        Theme
+        <a href="#">GoMDL</a> designed by Ray Xu.
+      </li>
+    </ul>
+  </div>
+</footer>
+</div>
+</main>
+</div>
+{{ partial "scripts.html" . }}
+</body>
+
+</html>

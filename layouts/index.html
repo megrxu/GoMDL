@@ -1,0 +1,11 @@
+{{ partial "header.html" . }} {{ partial "frame_head.html" . }} {{with .Site.Params.IntroSections}} {{range .}}
+<div id="{{.Identifier}}" class='intro-board mdl-shadow--2dp mdl-color--{{ .Color | default "grey-50"}}'>
+  <div class="intro-title">
+    <h1 class="mdl-typography--display-3 mdl-color-text--{{.TextColor}}">{{.Name}}</h1>
+  </div>
+  <div class="intro-content">
+    <h2 class="mdl-typography--display-1 mdl-color-text--{{.TextColor}}">{{.Text}}</h2>
+    <a class="mdl-button mdl-js-button mdl-button--raised  mdl-button--accent mdl-js-ripple-effect " href="{{.URL}}">{{.ButtonText}}</a>
+  </div>
+</div>
+{{end}} {{end}} {{ partial "frame_tail.html" . }}
