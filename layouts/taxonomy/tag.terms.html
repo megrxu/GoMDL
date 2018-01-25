@@ -1,15 +1,17 @@
 {{ partial "header.html" . }} {{ partial "frame_head.html" . }}
 
-    <div class="mdl-shadow--2dp page-card">
-      <ul>
-        {{ $data := .Data }} {{ range $key, $value := .Data.Terms.Alphabetical }}
-          <span class="mdl-chip mdl-chip--contact tag-chip">
-            <a class="mdl-color-text--black" href='{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}'>
-              <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">{{ $value.Count }}</span>
-              <span class="mdl-chip__text">{{ $value.Name }}</span>
-            </a>
-          </span>
-        {{ end }}
-      </ul>
-    </div>
+<div class="mdl-shadow--2dp">
+<div id="tags-card-large">
+  {{ $data := .Data }} {{ range $key, $value := .Data.Terms.Alphabetical }}
+  <div class="tags-wrapper">
+  <span class="mdl-chip mdl-chip--contact tag-chip">
+    <a class="mdl-color-text--black" href='{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}'>
+      <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">{{ $value.Count }}</span>
+      <span class="mdl-chip__text">{{ $value.Name }}</span>
+    </a>
+  </span>
+</div>
+  {{ end }}
+</div>
+</div>
 {{ partial "frame_tail.html" . }}

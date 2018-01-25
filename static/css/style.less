@@ -1,10 +1,16 @@
 @dark-grey: #0f0f0f;
+@primary-color: rgb(33,150,243);
+@accent-color: rgb(33,150,243);
 
 html, body {
 	font-family: Roboto, "Noto Sans CJK SC";
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
+  color: @primary-color;
+  :hover{
+    color: darken(@primary-color, 100%);
+  }
 }
 
 // Drawer
@@ -44,7 +50,7 @@ main{
       padding: 16px;
     }
     .card-summary {
-      margin: 16px;
+      padding: 0 16px 16px 16px;
       p{
         margin-top: 16px;
       }
@@ -60,10 +66,37 @@ main{
       font-size: 16px;
       line-height: 1;
     }
+    blockquote {
+      font-size: 1em;
+      font-style: normal;
+      position: relative;
+      width: 100%;
+      margin: 20px 0;
+      padding: 0 20px;
+      border-left: 4px solid lighten(@primary-color, 5%);
+      &:before {
+        content: none;
+      }
+      &:after {
+        content: none;
+      }
+    }
+
     .article-content{
       padding: 16px;
       p,li,ol,ul{
         font-size: 1em;
+      }
+      hr {
+        margin: 24px -16px;
+      }
+      h1, h2, h3, h4, h5, h6{
+        color: @primary-color;
+        margin-top: 24px;
+        font-weight: 700;
+      }
+      h1{
+        font-size: 2.1em;
       }
       h2{
         font-size: 2em;
@@ -88,6 +121,9 @@ main{
       p{
         font-size: 1em;
       }
+      h1{
+        font-size: 2.1em;
+      }
       h2{
         font-size: 2em;
       }
@@ -111,10 +147,8 @@ main{
   }
 
   //Tag Chip
-  .tag-chip{
-    span{
-      height: 180px;
-    }
+  #tags-card-large{
+    padding: 16px;
   }
 
   //Index Page
@@ -136,6 +170,28 @@ main{
       width: 60%;
       height: 100%;
       text-align: center;
+    }
+  }
+
+  //Comment 
+  #disqus_thread{
+    padding: 16px;
+  }
+
+  //Pagination
+  .pagination ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .pagination li {
+    display: inline-flex;
+    margin: 0 12px;
+    text-align: center;
+    vertical-align: top;
+    a {
+      display: inline-block;
     }
   }
 }

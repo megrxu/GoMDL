@@ -4,6 +4,10 @@ body {
 }
 a {
   text-decoration: none;
+  color: #2196f3;
+}
+a :hover {
+  color: #000000;
 }
 .mdl-layout__drawer {
   border: none;
@@ -35,7 +39,7 @@ main .page-card .card-header {
   padding: 16px;
 }
 main .page-card .card-summary {
-  margin: 16px;
+  padding: 0 16px 16px 16px;
 }
 main .page-card .card-summary p {
   margin-top: 16px;
@@ -49,6 +53,21 @@ main .page-content article {
   font-size: 16px;
   line-height: 1;
 }
+main .page-content blockquote {
+  font-size: 1em;
+  font-style: normal;
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 20px;
+  border-left: 4px solid #39a1f4;
+}
+main .page-content blockquote:before {
+  content: none;
+}
+main .page-content blockquote:after {
+  content: none;
+}
 main .page-content .article-content {
   padding: 16px;
 }
@@ -57,6 +76,22 @@ main .page-content .article-content li,
 main .page-content .article-content ol,
 main .page-content .article-content ul {
   font-size: 1em;
+}
+main .page-content .article-content hr {
+  margin: 24px -16px;
+}
+main .page-content .article-content h1,
+main .page-content .article-content h2,
+main .page-content .article-content h3,
+main .page-content .article-content h4,
+main .page-content .article-content h5,
+main .page-content .article-content h6 {
+  color: #2196f3;
+  margin-top: 24px;
+  font-weight: 700;
+}
+main .page-content .article-content h1 {
+  font-size: 2.1em;
 }
 main .page-content .article-content h2 {
   font-size: 2em;
@@ -79,6 +114,9 @@ main .page-content .article-content img {
 main .page-content .card-content p {
   font-size: 1em;
 }
+main .page-content .card-content h1 {
+  font-size: 2.1em;
+}
 main .page-content .card-content h2 {
   font-size: 2em;
 }
@@ -97,8 +135,8 @@ main .page-content .card-content h6 {
 main .page-content .card-content img {
   width: 80%;
 }
-main .tag-chip span {
-  height: 180px;
+main #tags-card-large {
+  padding: 16px;
 }
 main .intro-board {
   display: flex;
@@ -119,4 +157,21 @@ main .intro-board .intro-content {
   width: 60%;
   height: 100%;
   text-align: center;
+}
+main #disqus_thread {
+  padding: 16px;
+}
+main .pagination ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+main .pagination li {
+  display: inline-flex;
+  margin: 0 12px;
+  text-align: center;
+  vertical-align: top;
+}
+main .pagination li a {
+  display: inline-block;
 }

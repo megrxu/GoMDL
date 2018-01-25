@@ -1,28 +1,25 @@
 {{ partial "header.html" . }} {{ partial "frame_head.html" . }}
 
 <div class="waterfall-list">
-  {{ range first 10 .Data.Pages}} {{ if eq .Type "post"}}
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }} {{ range .Paginator.Pages}} {{ if eq .Type "post"}}
   <div class="card-content">
     <div class="mdl-shadow--2dp page-card">
       <div class="card-header">
         <h2 class="mdl-card__title-text mdl-color-text--primary">
           <a href="{{ .Permalink }}" class="mdl-color-text--primary">{{ .Title }}</a>
         </h2>
-        <h1 class="mdl-card__subtitle-text">{{ .Date.Format "Mon, Jan 2, 2006" }}</h2>
+        <div class="mdl-card__subtitle-text">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
       </div>
-      <div>
-        <div class="card-summary">
-          {{with .Params.tags}}{{ range . }}
-          <span class="mdl-chip mdl-chip--contact">
-            <a class="mdl-color-text--black" href='{{ $.Site.BaseURL }}/tags/{{ (replace . "#" "%23") | urlize }}'>
-              <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">{{slicestr . 0 1}}</span>
-              <span class="mdl-chip__text">{{ . }}</span>
-            </a>
-          </span>
-          {{ end }} {{end}}
-          <p>{{.Summary}}</p>
-        </div>
-
+      <div class="card-summary">
+        {{with .Params.tags}}{{ range . }}
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='{{ $.Site.BaseURL }}/tags/{{ (replace . "#" "%23") | urlize }}'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">{{slicestr . 0 1}}</span>
+            <span class="mdl-chip__text">{{ . }}</span>
+          </a>
+        </span>
+        {{ end }} {{end}}
+        <p>{{.Summary}}</p>
       </div>
       <div class="mdl-card__actions mdl-card--border">
         <a href="{{ .Permalink }}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -34,4 +31,4 @@
   </div>
   {{ end }} {{ end }}
 </div>
-{{ partial "frame_tail.html" . }}
+{{ partial "pagination.html" . }} {{ partial "frame_tail.html" . }}
