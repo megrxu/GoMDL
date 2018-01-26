@@ -25,9 +25,6 @@ a :hover {
 main {
   position: relative;
 }
-main .waterfall-list {
-  column-count: 3;
-}
 main .waterfall-list .card-content {
   padding: 8px;
   break-inside: avoid-column;
@@ -48,10 +45,19 @@ main .page-content {
   padding: 24px;
   padding-bottom: 0px;
 }
+main .page-content container {
+  display: flex;
+  justify-content: center;
+}
+main .page-content sidebar {
+  width: 20%;
+  padding: 8px;
+}
 main .page-content article {
   padding: 8px;
   font-size: 16px;
   line-height: 1;
+  width: 60%;
 }
 main .page-content blockquote {
   font-size: 1em;
@@ -67,6 +73,32 @@ main .page-content blockquote:before {
 }
 main .page-content blockquote:after {
   content: none;
+}
+main .page-content h1 {
+  font-size: 2.1em;
+}
+main .page-content h2 {
+  font-size: 2em;
+}
+main .page-content h3 {
+  font-size: 1.8em;
+}
+main .page-content h4 {
+  font-size: 1.5em;
+}
+main .page-content h5 {
+  font-size: 1.3em;
+}
+main .page-content h6 {
+  font-size: 1.1em;
+}
+main .page-content pre {
+  font-size: 0.8em;
+  line-height: 2;
+  margin: 0 -16px;
+}
+main .page-content pre code {
+  padding: 0 16px;
 }
 main .page-content .article-content {
   padding: 16px;
@@ -89,24 +121,6 @@ main .page-content .article-content h6 {
   color: #2196f3;
   margin-top: 24px;
   font-weight: 700;
-}
-main .page-content .article-content h1 {
-  font-size: 2.1em;
-}
-main .page-content .article-content h2 {
-  font-size: 2em;
-}
-main .page-content .article-content h3 {
-  font-size: 1.8em;
-}
-main .page-content .article-content h4 {
-  font-size: 1.5em;
-}
-main .page-content .article-content h5 {
-  font-size: 1.3em;
-}
-main .page-content .article-content h6 {
-  font-size: 1.1em;
 }
 main .page-content .article-content img {
   width: 80%;
@@ -133,7 +147,7 @@ main .page-content .card-content h6 {
   font-size: 1.1em;
 }
 main .page-content .card-content img {
-  width: 80%;
+  width: 100%;
 }
 main #tags-card-large {
   padding: 16px;
@@ -174,4 +188,27 @@ main .pagination li {
 }
 main .pagination li a {
   display: inline-block;
+}
+main .sidebar {
+  width: 100%;
+  margin-bottom: 24px;
+}
+main sidebar #toc ul {
+  list-style-type: none;
+  padding-left: 8px;
+}
+@media all and (min-width: 1601px) {
+  .waterfall-list {
+    column-count: 3;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 1600px) {
+  .waterfall-list {
+    column-count: 2;
+  }
+}
+@media all and (max-width: 480px) {
+  .waterfall-list {
+    column-count: 1;
+  }
 }

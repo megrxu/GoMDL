@@ -1,24 +1,28 @@
 {{ partial "header.html" . }} {{ partial "frame_head.html" . }}
-<article>
-  <div class="mdl-shadow--2dp page-card">
-    <div class="card-header">
-      <h1 class="mdl-typography--display-1">
-        {{ .Title }}
-      </h1>
-      <h2 class="mdl-typography--body-2">{{ .Date.Format "Mon, Jan 2, 2006" }}</h2>
-      {{with .Params.tags}}{{ range . }}
-      <span class="mdl-chip mdl-chip--contact">
-        <a class="mdl-color-text--black" href='{{ $.Site.BaseURL }}/tags/{{ (replace . "#" "%23") | urlize }}'>
-          <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">{{slicestr . 0 1}}</span>
-          <span class="mdl-chip__text">{{ . }}</span>
-        </a>
-      </span>
-      {{ end }} {{end}}
+<container>
+  <article>
+    <div class="mdl-shadow--2dp page-card">
+      <div class="card-header">
+        <h1 class="mdl-typography--display-1">
+          {{ .Title }}
+        </h1>
+        <div class="mdl-typography--body-2">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+        {{with .Params.tags}}{{ range . }}
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='{{ $.Site.BaseURL }}/tags/{{ (replace . "#" "%23") | urlize }}'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">{{slicestr . 0 1}}</span>
+            <span class="mdl-chip__text">{{ . }}</span>
+          </a>
+        </span>
+        {{ end }} {{end}}
+      </div>
+      <hr>
+      <div class="article-content">{{ .Content }}</div>
+      {{ if .Params.comment | default true}}
+      {{ partial "comment.html" .}}
+      {{ end }}
     </div>
-    <hr>
-    <div class="article-content">{{ .Content }}</div>
-    {{ partial "comment.html" .}}
-  </div>
-</article>
-<!-- {{ partial "sidebar.html" .}}  -->
+  </article>
+  {{ partial "sidebar.html" .}} 
+</container>
 {{ partial "frame_tail.html" . }}

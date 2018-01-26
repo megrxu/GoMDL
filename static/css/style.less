@@ -1,6 +1,8 @@
 @dark-grey: #0f0f0f;
 @primary-color: rgb(33,150,243);
 @accent-color: rgb(33,150,243);
+@card-gutter: 16px;
+@page-gutter: 16px;
 
 html, body {
 	font-family: Roboto, "Noto Sans CJK SC";
@@ -34,7 +36,6 @@ main{
 
   //Waterfall list
   .waterfall-list{
-    column-count:3;
     .card-content{
       padding:8px;
       break-inside: avoid-column;
@@ -61,10 +62,19 @@ main{
   .page-content{
     padding:24px;
     padding-bottom:0px;
+    container{
+      display: flex;
+      justify-content: center;
+    }
+    sidebar{
+      width: 20%;
+      padding: 8px;
+    }
     article{
       padding: 8px;
       font-size: 16px;
       line-height: 1;
+      width: 60%;
     }
     blockquote {
       font-size: 1em;
@@ -81,7 +91,32 @@ main{
         content: none;
       }
     }
-
+    h1{
+      font-size: 2.1em;
+    }
+    h2{
+      font-size: 2em;
+    }
+    h3{
+      font-size: 1.8em;
+    }
+    h4{
+      font-size: 1.5em;
+    }
+    h5{
+      font-size: 1.3em;
+    }
+    h6{
+      font-size: 1.1em;
+    }
+    pre{
+      font-size: 0.8em;
+      line-height: 2;
+      margin: 0 -16px;
+      code{
+        padding: 0 16px;
+      }
+    }
     .article-content{
       padding: 16px;
       p,li,ol,ul{
@@ -94,24 +129,6 @@ main{
         color: @primary-color;
         margin-top: 24px;
         font-weight: 700;
-      }
-      h1{
-        font-size: 2.1em;
-      }
-      h2{
-        font-size: 2em;
-      }
-      h3{
-        font-size: 1.8em;
-      }
-      h4{
-        font-size: 1.5em;
-      }
-      h5{
-        font-size: 1.3em;
-      }
-      h6{
-        font-size: 1.1em;
       }
       img{
         width: 80%;
@@ -140,7 +157,7 @@ main{
         font-size: 1.1em;
       }
       img{
-        width: 80%;
+        width: 100%;
       }
     
     }
@@ -194,4 +211,38 @@ main{
       display: inline-block;
     }
   }
+
+  //Sidebar
+  .sidebar {
+    // position: fixed;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  sidebar{
+    #toc{
+      ul{
+        list-style-type: none;
+        padding-left: 8px;
+      }
+    }
+  }
 }
+
+  //Large Screens
+  @media all and (min-width: 1601px){ 
+    .waterfall-list{
+      column-count:3;
+    }
+  }
+  // Medium Screens
+  @media all and (min-width: 481px) and (max-width: 1600px) {
+    .waterfall-list{
+      column-count:2;
+    }
+  }
+  // Small Screens
+  @media all and (max-width: 480px) {
+    .waterfall-list{
+      column-count:1;
+    }
+  }

@@ -1,5 +1,28 @@
-<div style="width:25%;margin-left:24px;float:left;padding:8px;">
-  <div style="width:25%;padding:16px;margin-bottom:24px;position:fixed" class="mdl-shadow--2dp">
-    {{ .TableOfContents }}
+<sidebar>
+  {{ if .Params.toc | default true}}
+  <div id="toc" class="sidebar mdl-shadow--2dp page-card">
+    <div class="mdl-card__title">
+      <div class="mdl-card__title-text">TOC</div>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      {{ .TableOfContents }}
+    </div>
   </div>
-</div>
+  {{ end }} {{ if .Site.Params.sidebar.tag | default true}}
+  <div id="tags-sidebar" class="sidebar mdl-shadow--2dp page-card">
+    <div class="mdl-card__title">
+      <div class="mdl-card__title-text">Tags</div>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      {{ $taxonomy := .Site.Taxonomies.tags }} {{ range $key, $value := $taxonomy }}
+      <span class="mdl-chip mdl-chip--contact tag-chip">
+        <a class="mdl-color-text--black" href='{{ $.Site.LanguagePrefix }}/tags/{{ $key | urlize }}'>
+          <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">{{ len $value }}</span>
+          <span class="mdl-chip__text">{{ $key }}</span>
+        </a>
+      </span>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</sidebar>
