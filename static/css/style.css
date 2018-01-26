@@ -15,15 +15,10 @@ a :hover {
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
   background-color: #0f0f0f;
 }
-.mdl-mini-footer {
-  position: relative;
-  width: 100%;
+#footer {
   height: 48px;
-  margin: 20px -24px 0px -24px;
+  margin: 20px -400px -24px -24px;
   background-color: #0f0f0f;
-}
-main {
-  position: relative;
 }
 main .waterfall-list .card-content {
   padding: 8px;
@@ -159,7 +154,7 @@ main .intro-board {
   justify-content: flex-start;
   align-items: center;
   padding: 16px;
-  margin: 0 16px 16px 0;
+  margin: 0 0 16px 0;
   min-height: 360px;
 }
 main .intro-board .intro-title {
@@ -206,9 +201,33 @@ main sidebar #toc ul {
   .waterfall-list {
     column-count: 2;
   }
+  main container {
+    flex-direction: column;
+  }
+  main container sidebar {
+    width: 100%;
+  }
+  main container article {
+    width: 100%;
+  }
+  main .page-content {
+    padding: 16px;
+  }
 }
 @media all and (max-width: 480px) {
   .waterfall-list {
     column-count: 1;
+  }
+  main container {
+    flex-direction: column;
+  }
+  main .page-content {
+    padding: 16px;
+  }
+  main .page-content sidebar {
+    width: 100%;
+  }
+  main .page-content article {
+    width: 100%;
   }
 }
