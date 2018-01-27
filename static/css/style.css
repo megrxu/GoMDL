@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: Roboto, "Noto Sans CJK SC";
+  font-family: Roboto, 'Noto Sans CJK SC', 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC', 'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti', SimHei, 'WenQuanYi Zen Hei Sharp', sans-serif;
 }
 a {
   text-decoration: none;
@@ -17,7 +17,7 @@ a :hover {
 }
 #footer {
   height: 48px;
-  margin: 20px -400px -24px -24px;
+  margin: 20px -24px -24px -24px;
   background-color: #0f0f0f;
 }
 main .waterfall-list .card-content {
@@ -46,13 +46,15 @@ main .page-content container {
 }
 main .page-content sidebar {
   width: 20%;
-  padding: 8px;
+  margin-left: 24px;
 }
 main .page-content article {
-  padding: 8px;
   font-size: 16px;
   line-height: 1;
   width: 60%;
+}
+main .page-content article .card-header h1 {
+  margin-bottom: 16px;
 }
 main .page-content blockquote {
   font-size: 1em;
@@ -205,6 +207,7 @@ main sidebar #toc ul {
     flex-direction: column;
   }
   main container sidebar {
+    margin: 0;
     width: 100%;
   }
   main container article {
@@ -222,9 +225,10 @@ main sidebar #toc ul {
     flex-direction: column;
   }
   main .page-content {
-    padding: 16px;
+    padding: 8px;
   }
   main .page-content sidebar {
+    margin: 0;
     width: 100%;
   }
   main .page-content article {

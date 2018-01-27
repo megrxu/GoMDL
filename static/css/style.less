@@ -5,7 +5,7 @@
 @page-gutter: 16px;
 
 html, body {
-	font-family: Roboto, "Noto Sans CJK SC";
+  font-family: Roboto,'Noto Sans CJK SC','Helvetica Neue',Helvetica,'Nimbus Sans L',Arial,'Liberation Sans','Hiragino Sans GB','Source Han Sans CN','Source Han Sans SC','Microsoft YaHei','Wenquanyi Micro Hei','WenQuanYi Zen Hei','ST Heiti',SimHei,'WenQuanYi Zen Hei Sharp',sans-serif;
 }
 a {
   text-decoration: none;
@@ -24,7 +24,7 @@ a {
 }
 #footer{
   height: 48px;
-	margin: 20px -400px -24px -24px;
+	margin: 20px -24px -24px -24px;
 	background-color: @dark-grey;
 }
 
@@ -63,13 +63,17 @@ main{
     }
     sidebar{
       width: 20%;
-      padding: 8px;
+      margin-left: 24px;
     }
     article{
-      padding: 8px;
       font-size: 16px;
       line-height: 1;
       width: 60%;
+      .card-header{
+        h1{
+          margin-bottom: 16px;
+        }
+      }
     }
     blockquote {
       font-size: 1em;
@@ -238,6 +242,7 @@ main{
       container{
         flex-direction: column;
         sidebar{
+          margin:0;
           width: 100%;
         }
         article{
@@ -259,8 +264,9 @@ main{
         flex-direction: column;
       }
       .page-content{
-        padding:16px;
+        padding:8px;
         sidebar{
+          margin:0;
           width: 100%;
         }
         article{
