@@ -5,7 +5,9 @@
       <div class="card-header">
         <h1 class="mdl-typography--display-1">
           {{ .Title }}
+          {{ if .Params.showdate | default true}}
           <div class="mdl-typography--body-1">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+          {{ end }}
         </h1>
         <div>{{with .Params.tags}}{{ range . }}
           <span class="mdl-chip mdl-chip--contact">

@@ -32,8 +32,9 @@ main{
   //Waterfall list
   .waterfall-list{
     .card-content{
-      padding:8px;
+      padding: 8px;
       break-inside: avoid-column;
+      margin-bottom: 16px;
     }
   }
 
@@ -55,11 +56,16 @@ main{
 
   // Page content
   .page-content{
-    padding:24px;
+    padding:16px;
     padding-bottom:0px;
+    hr {
+      border-top: 1px solid rgba(0,0,0,.1);
+    }
     container{
       display: flex;
       justify-content: center;
+      flex-direction: row;
+      padding: 8px;
     }
     sidebar{
       width: 20%;
@@ -123,6 +129,7 @@ main{
       }
       hr {
         margin: 24px -16px;
+        border-top: 1px solid rgba(0,0,0,.1);
       }
       h1, h2, h3, h4, h5, h6{
         color: @primary-color;
@@ -232,6 +239,9 @@ main{
     .waterfall-list{
       column-count:3;
     }
+    container{
+      flex-direction: row;
+    }
   }
   // Medium Screens
   @media all and (min-width: 481px) and (max-width: 1600px) {
@@ -239,18 +249,21 @@ main{
       column-count:2;
     }
     main {
-      container{
-        flex-direction: column;
-        sidebar{
-          margin:0;
-          width: 100%;
-        }
-        article{
-          width: 100%;
-        }
-      }
       .page-content{
-        padding:16px;
+        padding:8px;
+        container{
+          flex-direction: column;
+          sidebar{
+            margin:0;
+            width: 100%;
+            #toc{
+              margin-top: 24px;
+            }
+          }
+          article{
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -260,14 +273,22 @@ main{
       column-count:1;
     }
     main {
-      container{
-        flex-direction: column;
-      }
       .page-content{
         padding:8px;
+        container{
+          flex-direction: column;
+        }
         sidebar{
           margin:0;
           width: 100%;
+          #toc{
+            margin-top: 24px;
+          }
+        }
+        .article-content{
+          img{
+            width: 100%;
+          }
         }
         article{
           width: 100%;

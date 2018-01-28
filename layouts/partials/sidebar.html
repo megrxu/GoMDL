@@ -1,5 +1,5 @@
 <sidebar>
-  {{ if .Params.toc | default true}}
+  {{ if and (gt .WordCount 400 ) (ne .Params.toc "false") }}
   <div id="toc" class="sidebar mdl-shadow--2dp page-card">
     <div class="mdl-card__title">
       <div class="mdl-card__title-text">TOC</div>

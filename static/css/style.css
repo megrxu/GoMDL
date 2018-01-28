@@ -23,6 +23,7 @@ a :hover {
 main .waterfall-list .card-content {
   padding: 8px;
   break-inside: avoid-column;
+  margin-bottom: 16px;
 }
 main .mdl-shadow--2dp .page-card {
   padding: 16px;
@@ -37,12 +38,17 @@ main .page-card .card-summary p {
   margin-top: 16px;
 }
 main .page-content {
-  padding: 24px;
+  padding: 16px;
   padding-bottom: 0px;
+}
+main .page-content hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 main .page-content container {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  padding: 8px;
 }
 main .page-content sidebar {
   width: 20%;
@@ -108,6 +114,7 @@ main .page-content .article-content ul {
 }
 main .page-content .article-content hr {
   margin: 24px -16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 main .page-content .article-content h1,
 main .page-content .article-content h2,
@@ -120,6 +127,7 @@ main .page-content .article-content h6 {
   font-weight: 700;
 }
 main .page-content .article-content img {
+  align-self: center;
   width: 80%;
 }
 main .page-content .card-content p {
@@ -198,37 +206,49 @@ main sidebar #toc ul {
   .waterfall-list {
     column-count: 3;
   }
+  container {
+    flex-direction: row;
+  }
 }
 @media all and (min-width: 481px) and (max-width: 1600px) {
   .waterfall-list {
     column-count: 2;
   }
-  main container {
+  main .page-content {
+    padding: 8px;
+  }
+  main .page-content container {
     flex-direction: column;
   }
-  main container sidebar {
+  main .page-content container sidebar {
     margin: 0;
     width: 100%;
   }
-  main container article {
-    width: 100%;
+  main .page-content container sidebar #toc {
+    margin-top: 24px;
   }
-  main .page-content {
-    padding: 16px;
+  main .page-content container article {
+    width: 100%;
   }
 }
 @media all and (max-width: 480px) {
   .waterfall-list {
     column-count: 1;
   }
-  main container {
-    flex-direction: column;
-  }
   main .page-content {
     padding: 8px;
   }
+  main .page-content container {
+    flex-direction: column;
+  }
   main .page-content sidebar {
     margin: 0;
+    width: 100%;
+  }
+  main .page-content sidebar #toc {
+    margin-top: 24px;
+  }
+  main .page-content .article-content img {
     width: 100%;
   }
   main .page-content article {
