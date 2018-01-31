@@ -5,7 +5,8 @@
 @page-gutter: 16px;
 
 html, body {
-  font-family: Roboto,'Noto Sans CJK SC','Helvetica Neue',Helvetica,'Nimbus Sans L',Arial,'Liberation Sans','Hiragino Sans GB','Source Han Sans CN','Source Han Sans SC','Microsoft YaHei','Wenquanyi Micro Hei','WenQuanYi Zen Hei','ST Heiti',SimHei,'WenQuanYi Zen Hei Sharp',sans-serif;
+  font-family: Roboto,'Noto Sans CJK SC','Helvetica Neue',Helvetica,'Nimbus Sans L',Arial,'Liberation Sans','Hiragino Sans GB','Source Han Sans CN','Source Han Sans SC','Microsoft YaHei','Wenquanyi Micro Hei','WenQuanYi Zen Hei','ST Heiti',SimHei,'WenQuanYi Zen Hei Sharp',sans-serif !important;
+  color: rgba(0,0,0,.87);
 }
 a {
   text-decoration: none;
@@ -85,7 +86,6 @@ main{
       font-size: 1em;
       font-style: normal;
       position: relative;
-      width: 100%;
       margin: 20px 0;
       padding: 0 20px;
       border-left: 4px solid lighten(@primary-color, 5%);
@@ -95,6 +95,40 @@ main{
       &:after {
         content: none;
       }
+    }
+    table{
+      padding: 0;
+      width: 100%;
+      margin: 16px 0;
+      tr{
+        border-top: 1px solid #cccccc;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        &:nth-child(2n){
+          background-color: #f8f8f8;
+        }
+        th{
+          font-weight: bold;
+          border: 1px solid #cccccc;
+          text-align: left;
+          margin: 0;
+          padding: 6px 13px;
+        }
+        td{
+          border: 1px solid #cccccc;
+          text-align: left;
+          margin: 0;
+          padding: 6px 13px;
+        }
+      }
+    }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0;
+    }
+    
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0;
     }
     h1{
       font-size: 2.1em;
@@ -138,6 +172,8 @@ main{
       }
       img{
         width: 80%;
+        display: block;
+        margin: auto 0;
       }
     }
     .card-content{
@@ -164,6 +200,7 @@ main{
       }
       img{
         width: 100%;
+        margin: 24px 0;
       }
     
     }
@@ -288,6 +325,7 @@ main{
         .article-content{
           img{
             width: 100%;
+            margin: 24px 0;
           }
         }
         article{

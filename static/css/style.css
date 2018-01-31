@@ -1,6 +1,7 @@
 html,
 body {
-  font-family: Roboto, 'Noto Sans CJK SC', 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC', 'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti', SimHei, 'WenQuanYi Zen Hei Sharp', sans-serif;
+  font-family: Roboto, 'Noto Sans CJK SC', 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC', 'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti', SimHei, 'WenQuanYi Zen Hei Sharp', sans-serif !important;
+  color: rgba(0, 0, 0, 0.87);
 }
 a {
   text-decoration: none;
@@ -66,7 +67,6 @@ main .page-content blockquote {
   font-size: 1em;
   font-style: normal;
   position: relative;
-  width: 100%;
   margin: 20px 0;
   padding: 0 20px;
   border-left: 4px solid #39a1f4;
@@ -76,6 +76,41 @@ main .page-content blockquote:before {
 }
 main .page-content blockquote:after {
   content: none;
+}
+main .page-content table {
+  padding: 0;
+  width: 100%;
+  margin: 16px 0;
+}
+main .page-content table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+main .page-content table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+main .page-content table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+main .page-content table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+main .page-content table tr th :first-child,
+main .page-content table tr td :first-child {
+  margin-top: 0;
+}
+main .page-content table tr th :last-child,
+main .page-content table tr td :last-child {
+  margin-bottom: 0;
 }
 main .page-content h1 {
   font-size: 2.1em;
@@ -127,8 +162,9 @@ main .page-content .article-content h6 {
   font-weight: 700;
 }
 main .page-content .article-content img {
-  align-self: center;
   width: 80%;
+  display: block;
+  margin: auto 0;
 }
 main .page-content .card-content p {
   font-size: 1em;
@@ -153,6 +189,7 @@ main .page-content .card-content h6 {
 }
 main .page-content .card-content img {
   width: 100%;
+  margin: 24px 0;
 }
 main #tags-card-large {
   padding: 16px;
@@ -250,6 +287,7 @@ main sidebar #toc ul {
   }
   main .page-content .article-content img {
     width: 100%;
+    margin: 24px 0;
   }
   main .page-content article {
     width: 100%;
