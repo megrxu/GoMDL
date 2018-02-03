@@ -239,7 +239,7 @@ main sidebar #toc ul {
   list-style-type: none;
   padding-left: 8px;
 }
-@media all and (min-width: 1601px) {
+@media all and (min-width: 1201px) {
   .waterfall-list {
     column-count: 3;
   }
@@ -247,7 +247,7 @@ main sidebar #toc ul {
     flex-direction: row;
   }
 }
-@media all and (min-width: 481px) and (max-width: 1600px) {
+@media all and (min-width: 481px) and (max-width: 1200px) {
   .waterfall-list {
     column-count: 2;
   }
