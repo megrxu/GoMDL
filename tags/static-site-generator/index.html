@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Static-site-generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
+	<link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/styles/solarized-dark.min.css">
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body> <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Static-site-generator</span>
+      <div class="mdl-layout-spacer"></div>
+      
+    </div>
+  </header>
+  <div class="mdl-layout__drawer mdl-color--blue-grey-800 mdl-color-text--grey-50">
+    <span class="mdl-layout-title mdl-color--blue-grey-900">Cerulean</span>
+    
+    <nav class="mdl-navigation">
+      
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/GoMDL/">Home</a>
+      
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/GoMDL/tags/">Tags</a>
+      
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/GoMDL/resume/">Resume</a>
+      
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/GoMDL/about/">About</a>
+      
+    </nav>
+    
+  </div>
+  <main class="mdl-layout__content">
+    <div id="page-content" class="page-content">
+
+<div class="waterfall-list">
+    
+  <div class="card-content">
+    <div class="mdl-shadow--2dp page-card">
+      <div class="card-header">
+        <h2 class="mdl-card__title-text mdl-color-text--primary">
+          <a href="https://xugr.me/GoMDL/post/2014/03/migrate-from-jekyll/" class="mdl-color-text--primary">Migrate from Jekyll</a>
+        </h2>
+        <div class="mdl-card__subtitle-text">Mon, Mar 10, 2014</div>
+      </div>
+      <div class="card-summary">
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/GoMDL/tags/go'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">g</span>
+            <span class="mdl-chip__text">go</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/GoMDL/tags/golang'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">g</span>
+            <span class="mdl-chip__text">golang</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/GoMDL/tags/hugo'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">h</span>
+            <span class="mdl-chip__text">hugo</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/GoMDL/tags/jekyll'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">j</span>
+            <span class="mdl-chip__text">jekyll</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/GoMDL/tags/static-site-generator'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">s</span>
+            <span class="mdl-chip__text">static-site-generator</span>
+          </a>
+        </span>
+         
+        <p>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="https://xugr.me/GoMDL/post/2014/03/migrate-from-jekyll/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Read More
+        </a>
+      </div>
+      </h2>
+    </div>
+  </div>
+   
+</div>
+
+ <div id="footer" class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">©&nbsp2018&nbspRay Xu</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li>
+        Built with ❤
+      </li>
+      <li>
+        Theme
+        <a href="https://github.com/megrxu/GoMDL" target="_blank">GoMDL</a> designed by Ray Xu.
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+</main>
+</div>
+
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>
