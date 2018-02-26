@@ -192,7 +192,13 @@ main .page-content .card-content img {
   margin: 24px 0;
 }
 main #tags-card-large {
+  font-size: 16px;
   padding: 16px;
+  width: 80%;
+  line-height: 1;
+}
+main #tags-card-large .card-header h1 {
+  margin-bottom: 16px;
 }
 main .intro-board {
   display: flex;
@@ -291,5 +297,8 @@ main sidebar #toc ul {
   }
   main .page-content article {
     width: 100%;
+  }
+  main .page-content #tags-card-large {
+    width: 90%;
   }
 }
