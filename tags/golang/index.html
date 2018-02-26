@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Golang</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
+	<link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/styles/solarized-dark.min.css">
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body> <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Golang</span>
+      <div class="mdl-layout-spacer"></div>
+      
+    </div>
+  </header>
+  <div class="mdl-layout__drawer mdl-color--blue-grey-800 mdl-color-text--grey-50">
+    <span class="mdl-layout-title mdl-color--blue-grey-900">Cerulean</span>
+    
+    <nav class="mdl-navigation">
+      
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/">Home</a>
+      
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/tags/">Tags</a>
+      
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/resume/">Resume</a>
+      
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/about/">About</a>
+      
+    </nav>
+    
+  </div>
+  <main class="mdl-layout__content">
+    <div id="page-content" class="page-content">
+
+<div class="waterfall-list">
+    
+  <div class="card-content">
+    <div class="mdl-shadow--2dp page-card">
+      <div class="card-header">
+        <h2 class="mdl-card__title-text mdl-color-text--primary">
+          <a href="https://xugr.me/post/2014/09/creating-a-new-theme/" class="mdl-color-text--primary">Creating a New Theme</a>
+        </h2>
+        <div class="mdl-card__subtitle-text">Sun, Sep 28, 2014</div>
+      </div>
+      <div class="card-summary">
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/go'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">g</span>
+            <span class="mdl-chip__text">go</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/golang'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">g</span>
+            <span class="mdl-chip__text">golang</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/hugo'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">h</span>
+            <span class="mdl-chip__text">hugo</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/themes'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">t</span>
+            <span class="mdl-chip__text">themes</span>
+          </a>
+        </span>
+         
+        <p>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
+We&rsquo;ll start with creating a new site with a very basic template.</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="https://xugr.me/post/2014/09/creating-a-new-theme/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Read More
+        </a>
+      </div>
+      </h2>
+    </div>
+  </div>
+    
+  <div class="card-content">
+    <div class="mdl-shadow--2dp page-card">
+      <div class="card-header">
+        <h2 class="mdl-card__title-text mdl-color-text--primary">
+          <a href="https://xugr.me/post/2014/04/hugo-template-primer/" class="mdl-color-text--primary">(Hu)go Template Primer</a>
+        </h2>
+        <div class="mdl-card__subtitle-text">Wed, Apr 2, 2014</div>
+      </div>
+      <div class="card-summary">
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/go'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">g</span>
+            <span class="mdl-chip__text">go</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/golang'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">g</span>
+            <span class="mdl-chip__text">golang</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/template'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">t</span>
+            <span class="mdl-chip__text">template</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/themes'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">t</span>
+            <span class="mdl-chip__text">themes</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/development'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">d</span>
+            <span class="mdl-chip__text">development</span>
+          </a>
+        </span>
+         
+        <p>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="https://xugr.me/post/2014/04/hugo-template-primer/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Read More
+        </a>
+      </div>
+      </h2>
+    </div>
+  </div>
+    
+  <div class="card-content">
+    <div class="mdl-shadow--2dp page-card">
+      <div class="card-header">
+        <h2 class="mdl-card__title-text mdl-color-text--primary">
+          <a href="https://xugr.me/post/2014/04/getting-started-with-hugo/" class="mdl-color-text--primary">Getting Started with Hugo</a>
+        </h2>
+        <div class="mdl-card__subtitle-text">Wed, Apr 2, 2014</div>
+      </div>
+      <div class="card-summary">
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/go'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">g</span>
+            <span class="mdl-chip__text">go</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/golang'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">g</span>
+            <span class="mdl-chip__text">golang</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/hugo'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">h</span>
+            <span class="mdl-chip__text">hugo</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/development'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">d</span>
+            <span class="mdl-chip__text">development</span>
+          </a>
+        </span>
+         
+        <p>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at installing hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="https://xugr.me/post/2014/04/getting-started-with-hugo/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Read More
+        </a>
+      </div>
+      </h2>
+    </div>
+  </div>
+    
+  <div class="card-content">
+    <div class="mdl-shadow--2dp page-card">
+      <div class="card-header">
+        <h2 class="mdl-card__title-text mdl-color-text--primary">
+          <a href="https://xugr.me/post/2014/03/migrate-from-jekyll/" class="mdl-color-text--primary">Migrate from Jekyll</a>
+        </h2>
+        <div class="mdl-card__subtitle-text">Mon, Mar 10, 2014</div>
+      </div>
+      <div class="card-summary">
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/go'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">g</span>
+            <span class="mdl-chip__text">go</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/golang'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">g</span>
+            <span class="mdl-chip__text">golang</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/hugo'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">h</span>
+            <span class="mdl-chip__text">hugo</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/jekyll'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">j</span>
+            <span class="mdl-chip__text">jekyll</span>
+          </a>
+        </span>
+        
+        <span class="mdl-chip mdl-chip--contact">
+          <a class="mdl-color-text--black" href='https://xugr.me/tags/static-site-generator'>
+            <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">s</span>
+            <span class="mdl-chip__text">static-site-generator</span>
+          </a>
+        </span>
+         
+        <p>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="https://xugr.me/post/2014/03/migrate-from-jekyll/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Read More
+        </a>
+      </div>
+      </h2>
+    </div>
+  </div>
+   
+</div>
+
+ <div id="footer" class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">©&nbsp2018&nbspRay Xu</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li>
+        Built with ❤
+      </li>
+      <li>
+        Theme
+        <a href="https://github.com/megrxu/GoMDL" target="_blank">GoMDL</a> designed by Ray Xu.
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+</main>
+</div>
+
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>
