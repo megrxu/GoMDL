@@ -1,6 +1,5 @@
 @dark-grey: #0f0f0f;
-@primary-color: rgb(33,150,243);
-@accent-color: rgb(33,150,243);
+@quote-color: rgba(0,0,0, 0.2);
 @card-gutter: 16px;
 @page-gutter: 16px;
 
@@ -10,10 +9,10 @@ html, body {
 }
 a {
   text-decoration: none;
-  color: @primary-color;
-  :hover{
-    color: darken(@primary-color, 100%);
-  }
+  // color: @primary-color;
+  // :hover{
+  //   color: darken(@primary-color, 100%);
+  // }
 }
 
 // Drawer
@@ -88,7 +87,7 @@ main{
       position: relative;
       margin: 20px 0;
       padding: 0 20px;
-      border-left: 4px solid lighten(@primary-color, 5%);
+      border-left: 4px solid lighten(@quote-color, 5%);
       &:before {
         content: none;
       }
@@ -166,7 +165,7 @@ main{
         border-top: 1px solid rgba(0,0,0,.1);
       }
       h1, h2, h3, h4, h5, h6{
-        color: @primary-color;
+        // color: @primary-color;
         margin-top: 24px;
         font-weight: 700;
       }

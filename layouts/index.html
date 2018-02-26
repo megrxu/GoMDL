@@ -1,7 +1,7 @@
 {{ partial "header.html" . }} {{ partial "frame_head.html" . }}
 
 <div class="waterfall-list">
-  {{ $paginator := .Paginate .Data.Pages }} {{ range .Paginator.Pages}} 
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }} {{ range .Paginator.Pages}} {{ if eq .Type "post"}}
   <div class="card-content">
     <div class="mdl-shadow--2dp page-card">
       <div class="card-header">
@@ -29,6 +29,6 @@
       </h2>
     </div>
   </div>
-  {{ end }}
+  {{ end }} {{ end }}
 </div>
 {{ partial "pagination.html" . }} {{ partial "frame_tail.html" . }}

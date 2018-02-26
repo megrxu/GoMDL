@@ -5,10 +5,6 @@ body {
 }
 a {
   text-decoration: none;
-  color: #2196f3;
-}
-a :hover {
-  color: #000000;
 }
 .mdl-layout__drawer {
   border: none;
@@ -69,7 +65,7 @@ main .page-content blockquote {
   position: relative;
   margin: 20px 0;
   padding: 0 20px;
-  border-left: 4px solid #39a1f4;
+  border-left: 4px solid rgba(13, 13, 13, 0.2);
 }
 main .page-content blockquote:before {
   content: none;
@@ -157,7 +153,6 @@ main .page-content .article-content h3,
 main .page-content .article-content h4,
 main .page-content .article-content h5,
 main .page-content .article-content h6 {
-  color: #2196f3;
   margin-top: 24px;
   font-weight: 700;
 }

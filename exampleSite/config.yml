@@ -1,11 +1,9 @@
 baseURL: "https://xugr.me"
 title: "Cerulean"
-footnoteReturnLinkContents: "↩"
 theme: "GoMDL"
 permalinks:
   post: /post/:year/:month/:title/
   page: /:filename/
-hasCJKLanguage: true
 taxonomies:
   tag: "tags"
 preserveTaxonomyNames: true
@@ -37,4 +35,6 @@ params:
   AuthorName: "Ray Xu"
   AvatarURL: "/img/avatar.jpg"
   Footnote: "Built with ❤"
-  highlight: "solarized-dark"
+  # Primary Color - Accent-Color
+  Theme: "indigo-blue"
+  Highlight: "solarized-dark"
