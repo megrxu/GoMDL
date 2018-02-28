@@ -1,4 +1,6 @@
-baseURL: "https://xugr.me/GoMDL"
+baseURL: "http://xugr.me/GoMDL"
+relativeURLS: true
+canonifyURLs: false
 title: "Cerulean"
 theme: "GoMDL"
 permalinks:
@@ -15,19 +17,19 @@ menu:
       - Name: "Home"
         Weight: 1
         Identifier: "home"
-        URL: "/"
+        URL: ""
       - Name: "Tags"
         Identifier: "tags"
         Weight: 2
-        URL: "/tags/"
+        URL: "tags"
       - Name: "Resume"
         Identifier: "resume"
         Weight: 3
-        URL: "/resume/"
+        URL: "resume"
       - Name: "About"
         Identifier: "about"
         Weight: 4
-        URL: "/about/"
+        URL: "about"
 
 
 params:

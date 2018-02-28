@@ -20,7 +20,7 @@
     {{with .Site.Menus.main}}
     <nav class="mdl-navigation">
       {{range .}}
-      <a class="mdl-navigation__link mdl-color-text--grey-50" href="{{ .URL }}">{{ .Name}}</a>
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/{{ .URL }}">{{ .Name}}</a>
       {{end}}
     </nav>
     {{end}}
