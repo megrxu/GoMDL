@@ -3,93 +3,93 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://xugr.me/GoMDL/post/</loc>
+    <loc>http://xugr.me/GoMDL/post/</loc>
     <lastmod>2017-03-02T12:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/post/2014/09/creating-a-new-theme/</loc>
+    <loc>http://xugr.me/GoMDL/post/2014/09/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/post/2014/04/hugo-template-primer/</loc>
+    <loc>http://xugr.me/GoMDL/post/2014/04/hugo-template-primer/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/post/2014/04/getting-started-with-hugo/</loc>
+    <loc>http://xugr.me/GoMDL/post/2014/04/getting-started-with-hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/post/2014/03/migrate-from-jekyll/</loc>
+    <loc>http://xugr.me/GoMDL/post/2014/03/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/about/</loc>
+    <loc>http://xugr.me/GoMDL/about/</loc>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/tags/development/</loc>
+    <loc>http://xugr.me/GoMDL/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/tags/go/</loc>
+    <loc>http://xugr.me/GoMDL/tags/go/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/tags/golang/</loc>
+    <loc>http://xugr.me/GoMDL/tags/golang/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/</loc>
+    <loc>http://xugr.me/GoMDL/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/tags/hugo/</loc>
+    <loc>http://xugr.me/GoMDL/tags/hugo/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/tags/jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://xugr.me/GoMDL/resume/</loc>
-  </url>
-  
-  <url>
-    <loc>https://xugr.me/GoMDL/tags/static-site-generator/</loc>
+    <loc>http://xugr.me/GoMDL/tags/jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/tags/</loc>
+    <loc>http://xugr.me/GoMDL/resume/</loc>
+  </url>
+  
+  <url>
+    <loc>http://xugr.me/GoMDL/tags/static-site-generator/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://xugr.me/GoMDL/tags/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/tags/template/</loc>
+    <loc>http://xugr.me/GoMDL/tags/template/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://xugr.me/GoMDL/tags/themes/</loc>
+    <loc>http://xugr.me/GoMDL/tags/themes/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

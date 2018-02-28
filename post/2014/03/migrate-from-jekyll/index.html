@@ -4,10 +4,11 @@
 <head>
 	<title>Migrate from Jekyll</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="../../../../favicon.ico">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/styles/solarized-dark.min.css">
-	<link rel="stylesheet" href="https://xugr.me/GoMDL/css/style.css" />
+	<link rel="stylesheet" href="http://xugr.me/GoMDL/css/style.css" />
 </head>
 
 <body> <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
@@ -24,13 +25,13 @@
     
     <nav class="mdl-navigation">
       
-      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/GoMDL/">Home</a>
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="../../../../">Home</a>
       
-      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/GoMDL/tags/">Tags</a>
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="../../../../tags">Tags</a>
       
-      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/GoMDL/resume/">Resume</a>
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="../../../../resume">Resume</a>
       
-      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/GoMDL/about/">About</a>
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="../../../../about">About</a>
       
     </nav>
     
@@ -49,35 +50,35 @@
         </h1>
         <div>
           <span class="mdl-chip mdl-chip--contact">
-            <a class="mdl-color-text--black" href='https://xugr.me/GoMDL/tags/go'>
+            <a class="mdl-color-text--black" href='http://xugr.me/GoMDL/tags/go'>
               <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">g</span>
               <span class="mdl-chip__text">go</span>
             </a>
           </span>
           
           <span class="mdl-chip mdl-chip--contact">
-            <a class="mdl-color-text--black" href='https://xugr.me/GoMDL/tags/golang'>
+            <a class="mdl-color-text--black" href='http://xugr.me/GoMDL/tags/golang'>
               <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">g</span>
               <span class="mdl-chip__text">golang</span>
             </a>
           </span>
           
           <span class="mdl-chip mdl-chip--contact">
-            <a class="mdl-color-text--black" href='https://xugr.me/GoMDL/tags/hugo'>
+            <a class="mdl-color-text--black" href='http://xugr.me/GoMDL/tags/hugo'>
               <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">h</span>
               <span class="mdl-chip__text">hugo</span>
             </a>
           </span>
           
           <span class="mdl-chip mdl-chip--contact">
-            <a class="mdl-color-text--black" href='https://xugr.me/GoMDL/tags/jekyll'>
+            <a class="mdl-color-text--black" href='http://xugr.me/GoMDL/tags/jekyll'>
               <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">j</span>
               <span class="mdl-chip__text">jekyll</span>
             </a>
           </span>
           
           <span class="mdl-chip mdl-chip--contact">
-            <a class="mdl-color-text--black" href='https://xugr.me/GoMDL/tags/static-site-generator'>
+            <a class="mdl-color-text--black" href='http://xugr.me/GoMDL/tags/static-site-generator'>
               <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">s</span>
               <span class="mdl-chip__text">static-site-generator</span>
             </a>
@@ -109,7 +110,7 @@ With Jekyll, something that looked like</p>
 
 <h2 id="create-your-hugo-configuration-file">Create your Hugo configuration file</h2>
 
-<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="/overview/configuration/">Hugo configuration documentation</a> for details.</p>
+<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="../../../../overview/configuration/">Hugo configuration documentation</a> for details.</p>
 
 <h2 id="set-your-configuration-publish-folder-to-site">Set your configuration publish folder to <code>_site</code></h2>
 
@@ -135,13 +136,13 @@ git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
 
 <h2 id="convert-jekyll-templates-to-hugo-templates">Convert Jekyll templates to Hugo templates</h2>
 
-<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
+<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="../../../../layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
 
 <p>As a single reference data point, converting my templates for <a href="http://heyitsalex.net/">heyitsalex.net</a> took me no more than a few hours.</p>
 
 <h2 id="convert-jekyll-plugins-to-hugo-shortcodes">Convert Jekyll plugins to Hugo shortcodes</h2>
 
-<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
+<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="../../../../doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
 
 <h3 id="implementation">Implementation</h3>
 
@@ -311,56 +312,56 @@ s.setAttribute('data-timestamp', +new Date());
     <div class="mdl-card__actions mdl-card--border">
        
       <span class="mdl-chip mdl-chip--contact tag-chip">
-        <a class="mdl-color-text--black" href='/tags/development'>
+        <a class="mdl-color-text--black" href='../../../../tags/development'>
           <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">2</span>
           <span class="mdl-chip__text">development</span>
         </a>
       </span>
       
       <span class="mdl-chip mdl-chip--contact tag-chip">
-        <a class="mdl-color-text--black" href='/tags/go'>
+        <a class="mdl-color-text--black" href='../../../../tags/go'>
           <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">4</span>
           <span class="mdl-chip__text">go</span>
         </a>
       </span>
       
       <span class="mdl-chip mdl-chip--contact tag-chip">
-        <a class="mdl-color-text--black" href='/tags/golang'>
+        <a class="mdl-color-text--black" href='../../../../tags/golang'>
           <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">4</span>
           <span class="mdl-chip__text">golang</span>
         </a>
       </span>
       
       <span class="mdl-chip mdl-chip--contact tag-chip">
-        <a class="mdl-color-text--black" href='/tags/hugo'>
+        <a class="mdl-color-text--black" href='../../../../tags/hugo'>
           <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">3</span>
           <span class="mdl-chip__text">hugo</span>
         </a>
       </span>
       
       <span class="mdl-chip mdl-chip--contact tag-chip">
-        <a class="mdl-color-text--black" href='/tags/jekyll'>
+        <a class="mdl-color-text--black" href='../../../../tags/jekyll'>
           <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">1</span>
           <span class="mdl-chip__text">jekyll</span>
         </a>
       </span>
       
       <span class="mdl-chip mdl-chip--contact tag-chip">
-        <a class="mdl-color-text--black" href='/tags/static-site-generator'>
+        <a class="mdl-color-text--black" href='../../../../tags/static-site-generator'>
           <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">1</span>
           <span class="mdl-chip__text">static-site-generator</span>
         </a>
       </span>
       
       <span class="mdl-chip mdl-chip--contact tag-chip">
-        <a class="mdl-color-text--black" href='/tags/template'>
+        <a class="mdl-color-text--black" href='../../../../tags/template'>
           <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">1</span>
           <span class="mdl-chip__text">template</span>
         </a>
       </span>
       
       <span class="mdl-chip mdl-chip--contact tag-chip">
-        <a class="mdl-color-text--black" href='/tags/themes'>
+        <a class="mdl-color-text--black" href='../../../../tags/themes'>
           <span class="mdl-chip__contact mdl-color--primary mdl-color-text--white">2</span>
           <span class="mdl-chip__text">themes</span>
         </a>
